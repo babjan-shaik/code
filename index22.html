@@ -1,0 +1,71 @@
+<php>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="The Modern College.css">
+   <link rel="stylesheet" href="style22.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Suraj Kupate">
+   <title>Village Surveyors - Thondur</title>
+   
+</head>
+<body>
+   <nav class="navlist">
+      <ul>
+         <li><h4>Staff Tour Dairy.</h4></li>
+         <li><a href="">Home</a></li>
+         <li><a href="login.php">Login</a></li>
+         <li><a href="contact.php">Contact</a></li>
+      </ul>
+   </nav>
+   <div class="main-box">
+      <h1>Everything is Impossible Until it isn't..</h1>
+   </div>
+   <div id="current_date"></p>
+      <script>
+      document.getElementById("current_date").innerHTML = Date();
+      </script>
+  </div>
+  <style>
+   .copy {
+   margin-left: 500px;
+}
+   .scroll-left {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+    background: yellow;
+    color: black;
+    border: 1px solid orange;
+   }
+   .scroll-left p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    transform:translateX(100%);
+    /* Apply animation to this element */
+    animation: scroll-left 30s linear infinite;
+   }
+       /* Move it (define the animation) */
+       @keyframes scroll-left {
+        0%   {
+        transform: translateX(100%); 		
+        }
+        100% {
+        transform: translateX(-100%); 
+        }
+       }
+       </style>
+       
+       
+       <div class="scroll-left">
+       <p>Welcome  Surveyors... </p>
+       </div>
+</body>
+</html>
+</php>
